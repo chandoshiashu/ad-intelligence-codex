@@ -9,7 +9,8 @@ app = FastAPI(title="Ad Intelligence API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://ad-intelligence-codex.vercel.app/"
+        "http://localhost:3000",
+        "https://ad-intelligence-codex.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
