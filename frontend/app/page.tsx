@@ -25,7 +25,7 @@ type AnalysisResult = {
   recommendations?: JsonValue[];
 };
 
-const API_URL = "http://localhost:8000/analyze";
+const API_URL = `${process.env.NEXT_PUBLIC_API_URL}/analyze`;
 
 export default function Home() {
   const [company, setCompany] = useState("Swiggy");
